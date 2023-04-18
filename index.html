@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Encriptador</title>
 </head>
 <body>
-    <main class="content">
+    <main class="container">
         <section class="tarjeta-uno">
-            <input type="text" id="mensaje" placeholder="Ingresar mensaje" onkeypress="soloLetras(event)">
+            <textarea name="textarea" id="mensaje"  placeholder="Ingresar mensaje"></textarea>
+          
             <button id="encriptar">Encriptar</button>
             <button id="desencriptar">Desencriptar</button>
         </section>
         <section class="tarjeta-dos">
-            <input type="text" id="resultado" placeholder="Resultado..">
+            <textarea name="textarea" id="resultado" placeholder="Resultado.."></textarea>
             <button id="copiar">Copiar</button>
         </section>
  </main>
 </body>
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
 </html>

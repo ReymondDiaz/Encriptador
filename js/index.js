@@ -15,7 +15,8 @@ function encriptar (){
     .replaceAll("i","imes")
     .replaceAll("o","ober")
     .replaceAll("a","ai") 
-    .replaceAll("u","ufat");
+    .replaceAll("u","ufat")
+    
 
     inputResultado.value = mensajeEncriptado;
 }
@@ -27,9 +28,9 @@ function desencriptar (){
     .replaceAll("imes","i")
     .replaceAll("ober","o")
     .replaceAll("ai","a")
-    .replaceAll("ufat","u");
-    
-
+    .replaceAll("ufat","u")
+   
+   
     inputResultado.value = mensaje;
 }
 
