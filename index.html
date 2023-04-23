@@ -4,22 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Encriptador</title>
+    <link rel="icon" href="./Imagenes/aluraLogo.png">
+   
 </head>
 <body>
-    <main class="container">
-        <section class="tarjeta-uno">
-            <textarea name="textarea" id="mensaje"  placeholder="Ingresar mensaje"></textarea>
-          
-            <button id="encriptar">Encriptar</button>
-            <button id="desencriptar">Desencriptar</button>
+    <header>  
+        <nav class="titulo">
+            <img  class="img-1" src="./Imagenes/logo.svg" alt="logo">
+            <h1>Encriptador</h1>
+        </nav>
+    </header>
+
+    <main class="content">
+
+        <section class="contenedor-1"> 
+
+             <textarea name="mensaje"  id="mensaje" class="mensaje" placeholder="Ingresar mensaje."></textarea>
+             <p> <img src="./Imagenes/Vector (1).png" alt="exclamaci on"> Ingresar texto sin acentos.</p>
+            <article class="button-uno">
+                
+                <button id="encriptar" class="encriptar">Encriptar</button>
+                <button id="desencriptar" class="desencriptar">Desencriptar</button>
+            </article>
+
         </section>
-        <section class="tarjeta-dos">
-            <textarea name="textarea" id="resultado" placeholder="Resultado.."></textarea>
-            <button id="copiar">Copiar</button>
+
+        <section class="contenedor-2"> 
+            <article id="contenedor-2-inicio" class="contenedor-2-inicio">
+                <article class="parrafo" id="parrafo">
+                    <img class="imagen" id="imagen" src="./Imagenes/Muñeco.png" alt="Muñeco">
+                    <h2>Ningún mensaje fue encontrado.</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </article>
+            </article>
+            
+            <article class="contenedor-3" id="contenedor-3">
+                <textarea name="resultado"   id="resultado" class="resultado"    placeholder="Resultado.." disabled ></textarea>
+                <button id="copiar" class="copiar">Copiar</button>
+            </article>
+
         </section>
- </main>
+
+        <footer>
+
+        </footer>
+
+    </main>
 </body>
     <script src="./js/index.js"></script>
 </html>
